@@ -1,8 +1,14 @@
 body{
     font-size: 10px;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
+}
+.flex-container{
+    display: flex;
+    display: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 h1{
     font-size: 1rem;
@@ -11,6 +17,8 @@ h1{
 .card{
     width: 27vw;
     height: 55vh;
+    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,13 +26,17 @@ h1{
     background-color: burlywood;
 }
 .card-title{
+    display: flex;
     font-size: 2.2rem;
     text-transform: uppercase;
 }
 .card-img{
+    display: flex;
     width: 80%;
-    height: 60%;
+    height: 70%;
 }
-card-desc{
-    font-size: 90%;
+.card-desc{
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
 }
