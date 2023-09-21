@@ -3,6 +3,8 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: antiquewhite;
+    font-family: "trirong", serif;
 }
 .flex-container{
     display: flex;
@@ -11,7 +13,8 @@ body{
     padding: 20px;
 }
 h1{
-    font-size: 1rem;
+    font-size: 5rem;
+    text-align: center;
 }
 
 .card{
