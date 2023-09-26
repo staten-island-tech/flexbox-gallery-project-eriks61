@@ -28,6 +28,12 @@ h1 {
   align-items: center;
   justify-content: space-between;
   background-color: burlywood;
+  transition: all 0.5s;
+  filter: grayscale(80%);
+}
+.card:hover{
+transform: scale(1.05);
+filter: grayscale(0%);
 }
 .card-title {
   display: flex;
