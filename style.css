@@ -15,8 +15,11 @@ body {
 h1 {
   font-size: 5rem;
   text-align: center;
+  transition: all 0.5s;
 }
-
+h1:hover {
+  transform: rotate(20deg);
+}
 .card {
   border-radius: 2rem;
   width: 20%;
@@ -31,9 +34,10 @@ h1 {
   transition: all 0.5s;
   filter: grayscale(80%);
 }
-.card:hover{
-transform: scale(1.05);
-filter: grayscale(0%);
+.card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  translate: 20px;
 }
 .card-title {
   display: flex;
@@ -44,10 +48,26 @@ filter: grayscale(0%);
   display: flex;
   width: 80%;
   height: 70%;
-
 }
 .card-desc {
   display: flex;
   font-size: 1rem;
   text-align: center;
+}
+@keyframes shake{
+  0% { transform: translate(1px, 1px) rotate(0deg);}
+  10% { transform: translate(-1px, -2px) rotate(-1deg);}
+  20% { transform: translate(-3px, 0px) rotate(1deg);}
+  30% { transform: translate(3px, 2px) rotate(0deg);}
+  40% { transform: translate(1px, -1px) rotate(1deg);}
+  50% { transform: translate(-1px, 2px) rotate(-1deg);}
+  60% { transform: translate(-3px, 1px) rotate(0deg);}
+  70% { transform: translate(3px, 1px) rotate(-1deg);}
+  80% { transform: translate(-1px, -1px) rotate(1deg);}
+  90% { transform: translate(1px, 2px) rotate(-1deg);}
+  100% { transform: translate(1px, -2px) rotate(-1deg);}
+}
+h6:hover {
+  animation: shake 0.5s;
+  transform: perspective();
 }
